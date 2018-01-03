@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helpfightepidemic.helpfightepidemic.GovernmentCorner">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/mr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/vr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/mr"
+            android:layout_below="@+id/mr"
+            android:layout_marginTop="21dp"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/vr"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_marginTop="23dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:text="Medication Rate" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/mr"
+            android:text="Vaccination Rate" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isolation Possible"
+            android:layout_below="@+id/vr"
+            android:layout_alignStart="@+id/textView10" />
+
+
+        <Button
+            android:id="@+id/g1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="57dp"
+            android:onClick="go1"
+            android:text="GO" />
+
+        <EditText
+            android:id="@+id/zipcode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/ip" />
+
+        <EditText
+            android:id="@+id/disease1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:layout_below="@+id/zipcode1"
+            android:layout_alignStart="@+id/zipcode1" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ip"
+            android:layout_centerHorizontal="true"
+            android:text="zip code" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/zipcode1"
+            android:text="disease" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disease1"
+            android:text="date"
+            android:layout_alignEnd="@+id/textView15" />
+
+        <EditText
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/disease1"
+            android:layout_below="@+id/textView16"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
