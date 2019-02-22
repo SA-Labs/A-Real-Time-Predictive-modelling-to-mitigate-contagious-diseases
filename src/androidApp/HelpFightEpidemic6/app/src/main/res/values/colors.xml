@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f59e9</color>
+    <color name="colorPrimaryDark">#223ad7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="infected">#b5f43b12</color>
+    <color name="cyberquarantine">#be2ea6ff</color>
+    <color name="recovered">#c5f0f412</color>
+
+</resources>

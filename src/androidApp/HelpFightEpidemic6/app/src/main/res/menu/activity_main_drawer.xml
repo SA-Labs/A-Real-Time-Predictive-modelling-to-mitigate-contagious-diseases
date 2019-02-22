@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/maps"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Maps" />
+
+        <item android:title="Website"
+            android:id="@+id/website"
+            android:icon="@drawable/def" />
+        <item
+            android:id="@+id/test"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test" />
+        <item
+            android:id="@+id/govern"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Government Corner" />
+        <item
+            android:id="@+id/AboutUs"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="About Us" />
+    </group>
+
+    <item android:title="Stay Tuned">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/abc"
+                android:title="Facebook" />
+            <item android:title="Twitter"
+                android:id="@+id/Twitter"
+                android:icon="@drawable/wer" />
+            <item
+                android:id="@+id/Instagram"
+                android:icon="@drawable/efg"
+                android:title="Instagram" />
+        </menu>
+    </item>
+
+</menu>
