@@ -9,9 +9,9 @@ $disease=$_POST["disease"];
 
 
 $host = "localhost";
-$db="shresth3_disease_system";
-$user="shresth3_admin";
-$password="Arashrobo123!";
+$db="db_name";
+$user="db_user";
+$password="db_pass";
 
 $con = mysql_connect($host,$user,$password);
 
@@ -44,8 +44,8 @@ $infected= ($row['infected'])+1;
 $update="UPDATE final_parameter SET susceptible='$susceptible',infected='$infected' WHERE disease_id='$disease_id'";
 mysql_query($update);
 
-} 
-else 
+}
+else
 {
 
 
@@ -55,8 +55,8 @@ else
   {
    $population=$row['population'];
   }
-  
-  
+
+
   $select_infected_recovered="SELECT date,infected,recovered FROM final_parameter WHERE zipcode='$zipcode'&& disease='$disease' ORDER BY date";
  $result_infected_recovered=mysql_query($select_infected_recovered);
  $max=(mysql_num_rows($result_infected_recovered))-1;
@@ -69,24 +69,24 @@ else
     $infected=$row['infected'];
     $recovered=$row['recovered'];
   }
- 
- 
+
+
 }
 
- else 
+ else
  {
   $infected=1;
   $recovered=0;
- 
+
  }
-      
-       
+
+
    $susceptible= $population-($infected+$recovered);
    $insert_new="INSERT INTO final_parameter SET zipcode='$zipcode',disease='$disease',date='$date',susceptible='$susceptible',infected='$infected',recovered='$recovered'";
-   
+
 
  mysql_query($insert_new);
- 
+
 }
 
 

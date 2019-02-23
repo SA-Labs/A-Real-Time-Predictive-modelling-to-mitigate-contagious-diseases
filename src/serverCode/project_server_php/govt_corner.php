@@ -13,10 +13,9 @@ $date=$_POST["date"];
 
 
 $host = "localhost";
-$db="shresth3_disease_system";
-$user="shresth3_admin";
-$password="Arashrobo123!";
-
+$db="db_name";
+$user="db_user";
+$password="db_pass";
 $con = mysql_connect($host,$user,$password);
 
 mysql_select_db($db);

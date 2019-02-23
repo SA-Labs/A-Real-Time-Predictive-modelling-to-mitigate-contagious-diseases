@@ -6,9 +6,9 @@
 $zipcode='492014';
 
 $host = "localhost";
-$db="shresth3_disease_system";
-$user="shresth3_admin";
-$password="Arashrobo123!";
+$db="db_name";
+$user="db_user";
+$password="db_pass";
 
 $con = mysql_connect($host,$user,$password);
 
@@ -25,8 +25,3 @@ $disease= $row['disease'];
 echo $tp_th_ratio;
 echo $disease;
 }
-
-
-
-
-
